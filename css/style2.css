@@ -303,7 +303,9 @@ ul {
 .format-titleu {
   font-size: 24px;
   font-weight: 600;
+  /*padding: 220px 24px 24px 24px;*/
   margin: 220px 0 16px 0;
+  color: var(--color-fa);
 }
 
 .format-container {
@@ -331,7 +333,40 @@ ul {
   border-radius: 16px;
   transition: transform 0.3s;
 }
-.format-card:hover {
+.format-card:hover{
+ transition: transform 0.3s;
+}
+.format-item.walrus {
+  background-image: url(../images/walrus.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+.format-item.walrus:hover {
+  transform: scale(1.07);
+}
+.format-item.horseshoe {
+  background-image: url(../images/horseshoe.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+.format-item.horseshoe:hover {
+  transform: scale(1.07);
+}
+.format-item.handelbar {
+  background-image: url(../images/handlibar.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+.format-item.handelbar:hover {
   transform: scale(1.07);
 }
 
@@ -342,7 +377,7 @@ ul {
 .format-text {
   font-size: 14px;
   font-weight: 300;
-}
+  color: var(--color-fa);
 
 /*Karusel-Arrow*/
 
@@ -386,6 +421,8 @@ ul {
   flex-shrink: 0;
   border: none;
   border-radius: 16px;
+  width: 600px;
+  height: 600px;
 }
 
 /*CONTACT SECTION*/
@@ -480,7 +517,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 0.5s, visibility 0.5s;
 }
@@ -491,10 +528,10 @@ ul {
 }
 .modal {
   position: relative;
-  width: 80%;
   max-width: 880px;
-  height: 70%;
   max-height: 880px;
+  width: 80%;
+  height: 70%;
   padding: 64px 48px;
   background-color: var(--color-fa);
   border-radius: 32px;

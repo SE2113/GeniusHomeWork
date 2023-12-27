@@ -44,7 +44,7 @@
       </section>
       <section class="our-tradic">
         <div class="container">
-          <h2 class="hidden">наші переваги</h2>
+          <h2 class="visualy-hidden">наші переваги</h2>
           <ul class="tri-menu">
             <li class="tri-menutext">Великий попит на ринку</li>
             <li class="tri-menutext">Доступні за бюджетом програми</li>
@@ -133,7 +133,7 @@
               </svg>
             </button>
             <ul class="format-list">
-              <li class="format-item">
+              <li class="format-item walrus">
                 <article class="format-card">
                   <h3 class="format-titleu" lang="eu">Walrus</h3>
                   <div class="format-text">
@@ -145,7 +145,7 @@
                   </div>
                 </article>
               </li>
-              <li class="format-item">
+              <li class="format-item horseshoe">
                 <article class="format-card">
                   <h3 class="format-titleu" lang="eu">Horseshoe</h3>
                   <div class="format-text">
@@ -157,7 +157,7 @@
                   </div>
                 </article>
               </li>
-              <li class="format-item">
+              <li class="format-item handelbar">
                 <article class="format-card">
                   <h3 class="format-titleu" lang="eu">Handelbar</h3>
                   <div class="format-text">
@@ -188,13 +188,60 @@
               <p class="contact-forma">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-name"
+                    >Ім'я</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ім'я"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-email"
+                    >Електрона пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електрона пошта"
+                    required
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Нажимаючи на кнопку я погоджуюсь <br />
+                  <a class="form-link" href="#">політикою конфіденційності </a>
+                </p>
+              </form>
             </div>
-            <!--FORMA-->
             <iframe
               class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81065.82662860406!2d30.41220859092522!3d50.584245434848285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d3584522645d%3A0xfe08ee82b529ea4!2z0JLQuNGI0LPQvtGA0L7QtCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LsuLCAwNzMwMA!5e0!3m2!1suk!2sua!4v1702922168229!5m2!1suk!2sua"
               width="600"
-              height="450"
+              height="600"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -214,10 +261,10 @@
               <img src="./images/logo.svg" alt="logo" />
             </div>
             <ul class="footer-menu">
-              <li><a class="navigation" href="#"> Наші традиції</a></li>
-              <li><a class="navigation" href="#"> Шеф-кухарі</a></li>
-              <li><a class="navigation" href="#"> Формат</a></li>
-              <li><a class="navigation" href="#"> Контакти</a></li>
+              <li><a class="link" href="#"> Наші традиції</a></li>
+              <li><a class="link" href="#"> Шеф-кухарі</a></li>
+              <li><a class="link" href="#"> Формат</a></li>
+              <li><a class="link" href="#"> Контакти</a></li>
             </ul>
           </nav>
           <address class="footer-adress">
@@ -263,10 +310,75 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <button class="modal-btn-close" type="button">Close</button>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-name"
+              >Ім'я</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-names"
+              placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-telphone"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-email"
+              >Електрона пошта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-emailos"
+              placeholder="Електрона пошта"
+              required
+            />
+          </div>
+
+          <!--<div class="checkbox">
+            <input
+              class="checkbox-input visualy-hidden"
+              type="checkbox"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions"
+              >Я точно погоджуюсь з політикою конфіденційності</label
+            >
+          </div>-->
+
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Нажимаючи на кнопку я погоджуюсь <br />
+            <a class="form-link" href="#">політикою конфіденційності </a>
+          </p>
+        </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
