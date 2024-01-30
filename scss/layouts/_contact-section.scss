@@ -1,8 +1,8 @@
 .contact-section {
-    padding: 0;
+    padding: 40px 0 0 0;
 
     @media screen and (min-width: $bp-tablet) {
-    padding: 96px 0;
+    padding: 96px;
     }
 
 &__container {
@@ -14,15 +14,25 @@
         @media screen and (min-width: $bp-tablet) {
         flex-direction: row;
         gap: 32px;
-        padding-top: 96px;
+        // padding-top: 96px;
         }
     }
 
     &__form {
          padding: 0;
+         margin: 0 auto;
 
         @media screen and (min-width: $bp-tablet) {
          padding: 0 0 42px;
+        }
+    }
+    &__form-field {
+        margin-bottom: 16px;
+        width: 280px;
+
+        @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 24px;
+        width: auto;
         }
     }
 
@@ -39,28 +49,22 @@
     &__map {
         flex-shrink: 0;
         height: 176px;
-        margin: 0 --24px;
-        margin: auto;
+        margin: 0 -24px;
         border: none;
-        border-radius: 16px;
     
         @media screen and (min-width: $bp-tablet) {
         margin: auto;
         width: 320px;
         height: 500px;
+        border-radius: 16px;
+
         }
         @media screen and (min-width: $bp-desktop) {
         width: 600px;
         height: 595px;
         }
     }
-    &__form-field {
-        margin-bottom: 16px;
-
-        @media screen and (min-width: $bp-tablet) {
-        margin-bottom: 24px;
-        }
-    }
+    
     &__contact-form {
         color: #465929;
     }
