@@ -1,0 +1,16 @@
+.button {
+    color: #faf4ea;
+    border: 2px solid var(--color-brand);
+    background-color: var(--color-brand);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 32px;
+
+&:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-brand);
+    color: #465929;
+}
+}
+

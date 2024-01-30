@@ -1,0 +1,48 @@
+.kuhari-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+
+    @media screen and (min-width: $bp-desktop) {
+        gap: 30px;
+    }
+
+    &__photo {
+            border-radius: 4px 4px 4px 200px;
+            box-shadow: -8px 8px 0 0 var(--color-fa),
+                -8px 8px 0 2px var(--color-photo-pol);
+            height: 226px;
+            width: 140px;
+
+    @media screen and (min-width: $bp-desktop) {
+            height: 390px;
+            width: 240px;
+            box-shadow: -16px 16px 0 0 var(--color-fa),
+            -16px 16px 0 2px var(--color-photo-pol);
+        }
+        }
+    
+        &__name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 40px;
+        }
+        }
+    
+        &__text {
+            font-size: 14px;
+            margin-bottom: 16px;
+       
+            &:last-child {
+            margin-bottom: 0;
+            }
+
+            @media screen and (min-width: $bp-tablet) {
+            font-size: 18px;
+            margin-bottom: 24px
+        }
+        }
+    }

@@ -1,0 +1,26 @@
+/*CHECKBOX
+
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-brand);
+}
+.checkbox {
+  position: relative;
+}
+.checkbox-label {
+  padding-left: 24px;
+}
+.checkbox-label::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  border: 2px var(--color-dark) solid;
+  border-radius: 4px;
+  content: "";
+}
+*/

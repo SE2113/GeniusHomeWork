@@ -1,0 +1,118 @@
+.footer {
+    position: relative;
+    background-image: url(../images/footerfon.png);
+    background-color: var(--color-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px 0;
+    gap: 20px;
+    
+&__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;      
+    }
+}
+&__nav,
+&__adress {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-basis: 50%;  
+    text-align: left;
+    }
+}
+
+&__logo,
+&__menu {
+    flex-grow: 1;
+}
+&::before,
+&::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    bottom: 0;
+}
+
+&::before {
+    background-image: url(../images/decor-bread-small.png);
+    width: 180px;
+    height: 120px;
+    left: 0;
+}
+
+&::after {
+    background-image: url(../images/decor-bread-large.png);
+    right: 0;
+    width: 380px;
+    height: 190px;
+}
+
+&__adress-list,
+&__adress-info,
+&__contacts {
+    flex-grow: 1;
+}
+
+&__adress-list,
+&__adress-info {
+    flex-grow: 1;
+}
+
+&__adress-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-fa); 
+}
+
+&__adress-link:hover {
+    color: var(--color-brand);
+}
+
+&__adress-icon {
+    fill: var(--color-fa);
+    /*заливка кольором*/
+    /*stroke: aqua; /*обводка*/
+}
+
+&__adress-icon:hover {
+    fill: var(--color-brand);
+}
+
+&__socials-icon {
+    fill: var(--color-primary-light);
+  }
+&__socials {
+    display: flex;
+    fill: var(--color-fa);
+    gap: 24px;
+    margin-top: 16px;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+    justify-content: flex-start;
+    }
+}
+
+&__socials-icon:hover { 
+    fill: var(--color-brand);
+  }
+
+&__adress-copyright {
+    font-size: 14px;
+    color: #a18268;
+}
+}
+
+
+

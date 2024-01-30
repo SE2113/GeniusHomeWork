@@ -1,0 +1,30 @@
+.section {
+    padding: 20px 0;
+
+@media screen and (min-width: 768px) {
+    padding: 48px 0;
+}
+
+    &__title {
+            color: var(--color-dark);
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 1.5;
+            // padding-top: 96px;
+            text-align: center;
+
+    @media screen and (min-width: 768px) {
+            font-size: 64px;
+            line-height: 1.3;
+        }
+        }
+
+     &--centered {
+        text-align: center;
+        }
+}
+
+/*.section-title.contact {
+    padding: 0;
+    margin-bottom: 42px;
+} */

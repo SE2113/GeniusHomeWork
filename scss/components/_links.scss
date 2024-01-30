@@ -1,0 +1,10 @@
+.link {
+    color: var(--color-fa);
+    text-decoration: none;
+    transition: color 0.3s;
+    
+&:hover {
+    color: var(--color-brand);
+}
+}
+

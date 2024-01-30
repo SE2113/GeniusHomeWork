@@ -1,0 +1,34 @@
+.imput {
+    color: var(--color-photo-pol);
+
+    &__label {
+        display: block;
+        position: absolute;
+        top: 16px;
+        left: 42px;
+    }
+    &__control {
+        padding: 16px 42px;
+        width: 90%;
+        border: 1px solid;
+        border-radius: 8px;
+        border-color: var(--color-photo-pol);
+        font-size: 16px;
+        line-height: 1.17;
+        background-color: transparent;
+        
+    &:focus {
+        outline: none;
+        border-color: var(--color-photo-pol);
+        }
+        
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.17;
+        color: var(--color-photo-pol);
+        }
+    &:focus::placeholder {
+        color: var(--color-dark);
+        }
+    }
+}
